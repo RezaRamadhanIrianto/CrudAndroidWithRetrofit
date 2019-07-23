@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b1f26412">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/ic_ac_unit_black_24dp"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:text="CRUD ANDROID"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="100dp"
+            android:textSize="30sp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="By Reza Ramadhan"
+            android:textColor="#93ffffff"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="120dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:textColorHint="#c1bfbf"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:id="@+id/nama"
+            android:layout_centerInParent="true"
+            />
+        <EditText
+            android:textColorHint="#c1bfbf"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usia"
+            android:id="@+id/usia"
+            android:inputType="number"
+            android:layout_below="@+id/nama"
+            />
+        <EditText
+            android:textColorHint="#c1bfbf"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Domisili"
+            android:id="@+id/domisili"
+            android:layout_below="@+id/usia"
+            />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/domisili"
+            android:background="#393939"
+            android:text="Simpan"
+            android:id="@+id/btn_save"
+            android:textColor="#fff"
+            />
+        <Button
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_save"
+            android:background="#393939"
+            android:text="Halaman Tampil Data"
+            android:id="@+id/btn_pindah"
+            android:textColor="#fff"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_pindah"
+            android:text="Update"
+            android:id="@+id/btn_update"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:background="#393939"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_update"
+            android:text="Hapus"
+            android:textColor="#fff"
+            android:background="#393939"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn_hapus"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
